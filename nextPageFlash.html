@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Flash Forex Trading Institute</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="javascriptCode.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <!-- Navigation bar code -->
+  <div class="header">
+    <h2 class="logo">Flash Forex Trading Institute</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+
+
+  <h1 class="forex">Start Learning Forex Trading Today!</h1>
+
+
+
+  <!-- Course Purchase Code begins here -->
+  <div class="course">
+    <section class="price-comperison">
+      <div class="price-column">
+        <div class="price-header">
+          <div class="price">
+            <div class="rand-sign">R</div>
+            500
+            <div class="per-month">/pm</div>
+          </div>
+          <div class="plan-name">Beginner</div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 1
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 2
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 3
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 4
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 5
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 6
+        </div>
+
+        <a href="registrationForm.html"><button class="cta">Enroll Today</button></a>
+      </div>
+
+      <div class="price-column popular">
+        <div class="most-popular">Most Popular</div>
+        <div class="price-header">
+          <div class="price">
+            <div class="rand-sign">R</div>
+            1000
+            <div class="per-month">/pm</div>
+          </div>
+          <div class="plan-name">Intermediate</div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 1
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 2
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 3
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 4
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 5
+        </div>
+
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Course 6
+        </div>
+
+        <a href="registrationForm.html"><button class="cta">Enroll Today</button></a>
+      </div>
+
+      <div class="price-column">
+        <div class="price-header">
+          <div class="price">
+            <div class="rand-sign">R</div>
+            1500
+            <div class="per-month">/pm</div>
+          </div>
+          <div class="plan-name">Advanced</div>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 1
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 2
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 3
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 4
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 5
+        </div>
+
+        <div class="feature">
+          <img src="check-circle.svg">
+          Course 6
+        </div>
+
+        <a href="registrationForm.html"><button class="cta">Enroll Today</button></a>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <!-- Basic Maths Quiz Code Begins here -->
+  <center>
+    <h1 class="h100" style="font-size: 300%">Take the Maths Test Before Enrolling.</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="question"></h2>
+    <input type="text" name="answer" id="answer" style="width: 200px; height: 30px; font-size: 25px;"><br><br>
+    <button class="btn80" onclick="fire()">Enter</button>
+  </center>
+
+
+  <script type="text/javascript">
+
+
+    /*Basic Maths Quizz that the user must take before enrolling on our course*/
+
+    var minimum = 1;
+    var maximum = 100;
+    var int1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+    var int2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+
+    document.getElementById('question').innerHTML = int1 + " " + "+" + " " + int2;
+
+    var qanswer = int1 + int2;
+
+    function fire() {
+
+      var uanswer = document.getElementById('answer').value;
+      if (uanswer == qanswer) {
+        alert("Congregulations!!! You Passed The Test You May Proceed And Enroll On Any Course.");
+
+      } else {
+        alert("Wrong Answer! Please Try Again")
+      }
+    }
+
+  </script>
+
+
+
+
+  <footer onload='document.footerValid.txtb.focus()'>
+    <div class="footer-container">
+      <div class="left-col">
+        <!-- <img src="logo.png" alt="" class="logo"> -->
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="rights-text">&#169 2020 Created by Lerato Moshabi All Rights Reserved.</p>
+      </div>
+
+      <div class="right-col">
+        <h2>Our Newsletter</h2>
+        <div class="border"></div><br>
+        <p>Enter Your Email to get our news and updates.</p><br>
+
+
+        <form action="#" class="newsletter-form" name="footerValid">
+          <input class="txtb" type="text" name="txtb" placeholder="Enter Your Email">
+          <input type="submit" class="btn8" value="submit" onclick="ValidateEmail(document.footerValid.txtb)">
+        </form>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+
+      /*Validates if the correct email format is entered.*/
+      function ValidateEmail(inputText) {
+
+        var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if (inputText.value.match(mailformat)) {
+          alert("Valid email address!");
+          document.newsletter - form.txtb.focus();
+          return true;
+        }
+        else {
+          alert("You have entered an invalid email address. Please try again!");
+          document.newsletter - form.txtb.focus();
+          return false;
+        }
+      }
+
+    </script>
+
+
+  </footer>
+</body>
+
+</html>

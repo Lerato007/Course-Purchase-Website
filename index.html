@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="javascriptCode.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+</head>
+
+
+
+<body class="firstPage" onload='document.myForm.userN.focus()'>
+
+
+  <!-- Login Form -->
+
+  <div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+      <form id="myForm" name="myForm" action="nextPageFlash.html" onsubmit="return validateForm()" method="post">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" name="userN" id="email" placeholder="Email Address" onkeydown="validation()">
+        <span id="text"></span>
+    </div>
+
+
+    <div class="textbox">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Password" name="passW" value="">
+    </div>
+
+    <input class="btn" type="submit" name="" value="Log in">
+    </form>
+  </div>
+</body>
+
+</html>
